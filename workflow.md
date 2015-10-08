@@ -14,3 +14,13 @@
     - 2.3.2 Chart the text distibution.
   - 2.4 For target column, find the correlation
     - 2.4.1 Use random forest, try to find the property importance
+
+
+### Data storage
+- 1. raw_data - train.csv
+-             - test.csv
+- 2. raw_data_schema      // How to read from the raw_data
+- 3. pre_processed_data   // data after parsing and etc., stored as spark sql
+- 4. data_property        // Store feature table
+- 5. data_mining_schema   // Schema that transform data schema to schema that describe the nature of the data
+-                         // Eg. time, address, zipcode, id, float, string and etc. 
